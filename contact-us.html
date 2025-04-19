@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/img/medi_logo.165df8b3ce4a83f6899e.png"type="image/x-icon">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>MediGlow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: url('/img/BG1.jpg') no-repeat center center/cover;
+            height: 60%;
+        }
+
+        header {
+            
+            height: 86vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .logo
+        {
+            height: 20px;
+            text-align: center;
+           
+        }
+        
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #00438b;
+            font-family: math;
+            margin-top: 35px;
+        }
+
+        header a {
+            text-decoration: none;
+            background: #007BFF;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            margin: 0 0.5rem;
+            transition: background 0.3s ease;
+            font-size: 1.3rem;
+        }
+
+        header a:hover {
+            background: #0056b3;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 1.0rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+        .Count
+        {
+            
+            display: flex;
+            justify-content: space-evenly;
+            background: #00438b;
+            color: white;
+            height: 40px;
+        }
+        .Count ul
+        {
+            list-style-type:none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .Count li
+        {
+            margin-left: 183px;
+            margin-block: auto;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+        .content {
+            max-width: 50%;
+            position: absolute;
+            top: 150%;
+            left: 40%;
+            transform: translate(-81%, -50%);
+        }
+
+        .content2 {
+            max-width: 50%;
+           
+            
+        }
+
+        .content h1 {
+            font-size: 56px;
+            color: #003366;
+            margin-bottom: 20px;
+            
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+            
+        }
+
+        .content ul li {
+            font-size: 26px;
+            color: #0056e0;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .content ul  :hover
+        {
+            color: #003366;
+        }
+
+
+        .products-section {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .products-section h2 {
+      margin: 0;
+    }
+    .products-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+    .product-card {
+      background-color: white;
+      color: black;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 0 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+    }
+    .product-card img {
+      width: 100%;
+      height: 242px;
+    }
+    .product-card h3 {
+      margin: 15px 0;
+    }
+    .product-card .buttons {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+    .product-card .buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: white;
+    }
+    .product-card .buttons .inquiry {
+      background-color: #003366;
+    }
+    .product-card .buttons .view-more {
+      background-color: #007bff;
+    }
+    .view-more-products {
+      text-align: center;
+      margin-top: 59px;
+      margin-bottom: 20px;
+    }
+    .view-more-products a {
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 25px;
+      background-color: #003366;
+      color: white;
+      font-size: 16px;
+    }
+    .koj img
+    {
+        width:100%;
+        height:30%;
+    }
+
+
+
+
+
+
+    .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px;
+            background-color: #0d0d0d;
+        }
+        .logo-section {
+            text-align: center;
+            width: 30%;
+        }
+        .logo-section img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        .logo-section p {
+            color: #fff;
+        }
+
+        .contact, .address, .links {
+            text-align: center;
+            color: #fff;
+        }
+        .contact h3
+        {
+            color: #fff;
+        }
+        .contact p
+        {
+            color: #fff;
+        }
+        .contact a, .links a {
+            color: #00aaff;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .contact a:hover, .links a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .dropdown-menu {
+          display: none;
+          
+        }
+        .dropdown-menu ul li a {
+          color: #fff;
+        }
+        
+        .menu-bar ul li:hover .dropdown-menu {
+          display: block;
+          position: absolute;
+          left: 341px;
+          top: 70%;
+          border-radius: 5px;
+          background-color: #333;
+          width: 204px;
+          
+        }
+        
+        .menu-bar ul li:hover .dropdown-menu ul {
+          display: block;
+          margin: 8px;
+          padding: 0%;
+        }
+        
+        .menu-bar ul li:hover .dropdown-menu ul li {
+          width: 163px;
+          padding: 10px;
+        }
+        
+        .dropdown-menu-1 {
+          display: none;
+        }
+        
+        .dropdown-menu ul li:hover .dropdown-menu-1 {
+          display: block;
+          position: absolute;
+          left: 150px;
+          top: 0;
+          background-color: var(--color-black);
+        
+        }
+
+         
+        .dropdown-menu-1
+         {
+           display: none;
+         }
+         .dropdown-menu ul li:hover .dropdown-menu-1 
+         {
+           display: block;
+           position: absolute;
+           left: 180px;
+           height: 37.1rem;
+           top: 0;
+           background-color: #333;
+           border-radius: 5px;
+         }
+
+
+         .container7 {
+            
+            
+            background-image: url(/img/top-view-photo-laptop-headphones-with-microphone-cup-drink-isolated-pastel-blue-background-with-blank-space_352249-4728.avif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
+        }
+        
+        .text {
+            flex: 1;
+        }
+        .text h1 {
+            color: #333;
+        }
+        .text p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+        .form-container {
+            width: 100%;
+            margin-left: 75px;
+            
+            padding: 6px;
+            background: transparent;
+           
+        }
+        .form-container h2 {
+            margin-bottom: 38px;
+            margin-top: 73px;
+            font-weight: 400;
+            font-size: 26px;
+            color: #2b2c2d;
+            font-family: sans-serif;
+        }
+        .form-group {
+            margin-bottom: 29px;
+            display: flex;
+        }
+        .form-group label {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 5px;
+            width: 144px;
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 10px;
+        }
+        
+        .form-group input,
+        .form-group select
+         {
+            width: 34%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #F2F2F2;
+            color: #787878;
+        }
+        .form-group textarea {
+            resize: none;
+        }
+        .form-group button {
+            width: 16%;
+            padding: 10px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #00438b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 165px;
+        }
+        .form-group button:hover {
+            background-color: #333;
+        }
+        .form-container h4 span
+        {
+           color: #000;
+        } 
+        .em
+        {
+          margin-left: 20px;
+        }
+        
+        .no
+        {
+          width: 82%;
+          padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #F2F2F2;
+        }
+        #contact
+        {
+          width: 80%;
+          height: 50px;
+        }
+
+        .banner {
+            position: relative;
+            margin-top: -9px;
+            
+        }
+
+        .banner img {
+            width: 100%;
+            margin-top: 9px;
+            height: 229px;
+            object-fit: cover;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            
+        }
+
+        .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-81%, -50%);
+           
+        }
+        
+
+        .banner-text h1 {
+            font-size: 3rem;
+            font-family: 'Avenir Next World Regular', avenir next, avenir, Effra, helvetica, arial, sans-serif;
+            color: #1f1d1dd1;
+           
+          width: 462px;
+          font-weight: 400;
+          margin-right: 197px;
+          
+        }
+
+
+        
+
+
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: row;
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            nav {
+               background: #333;
+               color: white;
+               padding: 1.0rem 0;
+               text-align: center;
+               position: sticky;
+               top: 0;
+               z-index: 1000;
+               width: 100%;
+               height: 56px;
+               
+            }
+            nav ul li a
+            {
+              
+               font-size: 13px;
+            }
+            .Count {
+                    display: flex;
+                    justify-content: space-evenly;
+                    background: #00438b;
+                    color: white;
+                    height: 40px;
+                    width:100%;
+                }
+        
+                .Count ul {
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-evenly;
+                    
+                }
+                .Count li {
+                    margin-left: 18px;
+                    margin-block: auto;
+                    font-size: 10px;
+                }
+                .logo {
+                      height: 20px;
+                      text-align: center;
+    
+                    }
+                .logo img
+                {
+                    width: 205px;
+                }
+
+                header h1 {
+                    font-size: 1rem;
+                    width: 386px;
+                    margin-right: 5px;
+                    margin-left: 7px;
+                    text-align: center;
+                }
+                header {
+                    height: 57vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                    justify-content: center;
+                    color: white;
+                    text-align: center;
+                    
+                }
+                header a {
+                    text-decoration: none;
+                    background: #007BFF;
+                    color: white;
+                    padding: 0.5rem 0.8rem;
+                    border-radius: 5px;
+                    margin: 0 1.5rem;
+                    transition: background 0.3s ease;
+                    font-size: 0.6rem;
+                }
+                .content h1 {
+                    font-size: 16px;
+                    color: #003366;
+                    margin-bottom: 20px;
+                    
+                }
+                
+                .koj img {
+                    width: 100%;
+                    height: 31vh;
+                }
+                .content ul li {
+                    font-size: 13px;
+                    color: #0056e0;
+                    margin: 10px 0;
+                    cursor: pointer;
+                }
+                .content {
+                    max-width: 50%;
+                    position: absolute;
+                    top: 90%;
+                    left: 37%;
+                    transform: translate(-81%, -50%);
+                }
+                
+                .products-section {
+                   background-color: #003366;
+                   color: white;
+                   padding: 20px;
+                   text-align: center;
+                   
+                }
+                .products-section h2 {
+                    margin: 0;
+                    font-size: 1rem;
+                }
+                .products-container {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    margin: 20px 0;
+                    
+                }
+                .product-card img {
+                    width: 100%;
+                    height: 126px;
+                }
+                .product-card {
+                    background-color: white;
+                    color: black;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    margin: 0 15px;
+                    text-align: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    width: 155px;
+                }
+                .product-card h3 {
+                    margin: 15px 0;
+                    font-size: 0.9rem;
+                }
+                .product-card .buttons a {
+                    text-decoration: none;
+                    padding: 6px 9px;
+                    border-radius: 4px;
+                    color: white;
+                    font-size: 6px;
+                }
+                .product-card .buttons {
+                    display: flex;
+                    justify-content: space-around;
+                     padding: 0px; 
+                }
+                .view-more-products {
+                    
+                    margin-top: 59px;
+                    margin-left: 5px;
+                    margin-bottom: 20px;
+                    text-align:center;
+                    
+                }
+                    .view-more-products a {
+                    text-decoration: none;
+                    padding: 15px 30px;
+                    border-radius: 25px;
+                    background-color: #003366;
+                    color: white;
+                    font-size: 8px;
+                }
+                .logo-section img {
+                    width: 66px;
+                    border-radius: 50%;
+                }
+                .logo-section p {
+                    color: #fff;
+                    font-size: 8px;
+                }
+                .contact h3 {
+                    color: #fff;
+                    font-size: 15px;
+                }
+                .contact, .address, .links {
+                    text-align: center;
+                    color: #fff;
+                    font-size: 7px;
+                }
+                .contact p
+                {
+                    text-decoration: none;
+                }
+                .footer {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 20px;
+                    background-color: #0d0d0d;
+                    gap: 23px;
+                }
+
+                .menu-bar ul li:hover .dropdown-menu {
+                    display: block;
+                    position: absolute;
+                    left: 51px;
+                    top: 90%;
+                    border-radius: 5px;
+                    background-color: #333;
+                    width: 155px;
+                }
+                .menu-bar ul li:hover .dropdown-menu ul li {
+                    width: 151px;
+                    padding: 7px;
+                }
+                .dropdown-menu ul li a {
+                    color: #fff;
+                    font-size: 10px;
+                }
+                .dropdown-menu ul li:hover .dropdown-menu-1 {
+                   display: block;
+                    position: absolute;
+                    left: 144px;
+                    top: 0;
+                    height: 34.9rem;
+                    background-color: #333;
+                    border-radius: 5px;
+                    width: 151px;
+                }
+                .banner img
+                {
+                  height: 64px;
+                }
+                .form-container
+                {
+                  margin-left: 0px;
+                  width: 200%;
+                }
+                .form-group input
+                {
+                  height: 20px;
+                  margin-top: 10px;
+                }
+
+                .form-group label {
+                  display: block;
+                  font-size: 16px;
+                  margin-bottom: 5px;
+                  width: 144px;
+                  text-align: center;
+                  font-family: sans-serif;
+                  margin-top: 2px;
+                }
+
+                .form-group button {
+                  width: 22%;
+                }
+               
+                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-bar">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Products</a>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Infusion Therapy</a>
+                      
+                      <div class="dropdown-menu-1">
+                        <ul>
+                          <li><a href="#">Iv Cannula</a></li>
+                          <li><a href="#">Iv Infusion Set</a></li>
+                          <li><a href="#"> Way stockCock With Extension Liness</a></li>
+                          <li><a href="#">Paedia Vol </a></li>
+                          <li><a href="#">Pressure Monitoring Kit</a></li>
+                          <li><a href="#">Extension Line/PM Line</a></li>
+                          <li><a href="#">3 Way Stop Cock </a></li>
+                        </ul>
+                      </div>
+                      </li>
+        
+        
+        
+        
+                      <li><a href="#">Anasthesia & Respiratory Care</a>
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            
+                            
+                            <li><a href="#">AURNEB</a></li>
+                            <li><a href="#">AUXY SET</a></li>
+                            <li><a href="#">Silicon Manual Resuscitators</a></li>
+                            
+        
+        
+                          </ul>
+                        </div>
+                      
+                      
+                      
+                      
+                      </li>
+                      <li>
+                        <a href="#">Critical Care</a>
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            
+                            <li><a href="#">Central Venous Catheters</a></li>
+                            <li><a href="#">Needle Free Connectors</a></li>
+                            <li><a href="#">Endotracheal Tube</a></li>
+                            
+        
+        
+                          </ul>
+                        </div>
+        
+        
+        
+        
+        
+                      </li>
+                      <li><a href="#">Urology</a>
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            
+                            <li><a href="#">Latex foley Catheter Silicon Coated 2 Way/ 3 Way</a></li>
+                            <li><a href="#">AUR-U Meter</a></li>
+                            <li><a href="#">Urine Bag</a></li>
+                          </ul>
+                        </div>
+        
+        
+        
+        
+                      </li>
+                      <li><a href="#">Gastroenterology</a>
+        
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            <li><a href="#">PVC Ryles Tube</a></li>
+                            <li><a href="#">Infant Feeding Tube</a></li>
+                            <li><a href="#">Stomach Tube</a></li>
+                          </ul>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      </li>
+        
+        
+                      
+        
+        
+        
+        
+        
+                      <li><a href="#">Surgery And Drainge</a>
+        
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            <li><a href="#">Yankur Suction Set</a></li>
+
+                            <li><a href="#">Closed Wound Drainage Set</a></li>
+                          </ul>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      </li>
+        
+        
+        
+        
+        
+                      <li><a href="#">Nephrology</a>
+        
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            
+                            <li><a href="#">Hemodialysis Catheter Kit</a></li>
+                           
+                          </ul>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      </li>
+        
+        
+                      <li><a href="#">Cardiovascular</a>
+        
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            <li><a href="/PTCA KIT.html">PTCA KIT</a></li>
+                            <li><a href="/INTRODUCER SHEATH.html">Introducer Sheath</a></li>
+                            <li><a href="/PTCA BALLOON.html">PTCA Balloons Dilatation Catheter</a></li>
+                          </ul>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      </li>
+        
+        
+                      <li><a href="#">Component And Accessories</a>
+        
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            
+                            <li><a href="/GUIDEWIRE.html">Guidewire Introducer Needles</a></li>
+                            
+                            <li><a href="/LUER CAP.html">Luer Cap</a></li>
+                            <li><a href="/THREADED.html">Threaded Stopper</a></li>
+                          </ul>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      </li>
+
+
+                      <li><a href="#">Vaginal Speculms</a>
+        
+        
+        
+                        <div class="dropdown-menu-1">
+                          <ul>
+                            
+                            <li><a href="/GUIDEWIRE.html">Speculum Vaginal Sims Double Ended</a></li>
+                            
+                            <li><a href="/LUER CAP.html">Speculum Vaginal Graves</a></li>
+                            <li><a href="/THREADED.html">Speculum Vaginal Cusco</a></li>
+                          </ul>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      </li>
+
+                      
+
+
+
+
+
+
+                      <li><a href="#">Oxygen Flow Meter</a>
+                      </li>
+
+        
+        
+                    </ul>
+                  </div>
+            
+            </li>
+            <li><a href="/About.html">About Us</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="/contact-us.html">Contact Us</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="Count">
+        <ul>
+            <li> Call Us.:9667065001 </li>
+            <li>Email Us : info@mediglowmedicare.com</li>
+        </ul>
+    </div>
+   
+
+    <div class="banner">
+        <img src="/img/vecteezy_contact-symbols-in-the-laptop-keyboard_4340169.jpg" alt="Banner Image">
+        <div class="banner-text">
+            <h1></h1>
+        </div>
+    </div>
+    
+
+
+
+    <div class="container7">
+        <div class="content2">
+            
+          <div class="form-container">
+            <h4>Customer Care No.<span>:9667065001</span></h4>
+            <h4>Email. <span>:info@mediglowmedicare.com</span></h4>
+            <h2>Feedback</h2>
+            <form action="https://formspree.io/f/mkggpqjy" method="post">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email" class="em">Contact No. *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact">Email. *</label>
+                    <input type="text" id="contact" name="contact" required>
+  
+                </div>
+                
+               
+                
+                <div class="form-group">
+                    <label for="address">Enter Topic. *</label>
+                    <textarea id="address"  type="text" class="no" name="address"  rows="3"></textarea>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="remarks">Remarks (if any)</label>
+                    <textarea id="remarks"  type="text" class="no"name="remarks" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+  
+           
+           
+    </div>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="logo-section">
+        <img src="/img/medi_logo.165df8b3ce4a83f6899e.png" alt="Mediglow Logo">
+        <p>Experience excellence with our superior quality products</p>
+    </div>
+    <div class="contact">
+        <h3>Contacts</h3>
+        <p>📞 +91-9667065001</p>
+        <p>📧 <a href="mailto:info@mediglowmedicare.com">info@mediglowmedicare.com</a></p>
+        <p>📧 <a href="mailto:prince@mediglowmedicare.com">prince@mediglowmedicare.com</a></p>
+    </div>
+    <div class="address">
+        <h3>Address</h3>
+        <p>2443, Sector 7A<br>Faridabad, Haryana 121006</p>
+    </div>
+    <div class="links">
+        <h3>Links</h3>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+</footer>
+
+
+
+
+    
+</body>
+</html>
